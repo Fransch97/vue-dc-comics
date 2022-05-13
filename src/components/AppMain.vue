@@ -19,6 +19,7 @@ main{
     padding: 50px;
 }
 .container-main{
+    margin: auto;
     width: 70%;
     color: white;
 }
