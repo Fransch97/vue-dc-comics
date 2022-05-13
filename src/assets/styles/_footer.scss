@@ -1,0 +1,36 @@
+footer{
+    
+    .footer-links{
+        background-image: url(../assets/img/footer-bg.jpg);
+        height:40vh;
+        padding: 20px 0;
+        // display: flex;
+        // flex-wrap: wrap;
+        .links-container-footer{
+            display: flex;
+            width: 70%;
+            margin: auto;
+            ul{
+                padding: 20px 20px 20px 0;
+        
+                .title-li{
+                    display: inline-block;
+                    font-weight: bold;
+                    text-transform: uppercase;
+                    color: white;
+                    font-size: 18px;
+        
+                }
+                .small-li{
+                    font-size: 12px;
+                    a{
+                        display: inline-block;
+                        color: #989694;
+                        font-weight: bold;
+                        padding: 3px 0;
+                    }
+                }
+            }
+        }
+    }
+}

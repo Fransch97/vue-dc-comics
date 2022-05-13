@@ -3,12 +3,13 @@
       <div class="footer-links">
           <div class="links-container-footer">
               <ul v-for="(obj, index) in footerLinks" :key="`footer-${index}`">
-                  <li><a href="" class="title-ul"></a></li>
+                  <li><a href="" class="title-li">{{obj.title}}</a></li>
                   <li 
-                  v-for="(obj, indexx) in obj.links" 
+                  class="small-li"
+                  v-for="(obx, indexx) in obj.links" 
                   :key="`footer-${indexx}`">
 
-                    <a href="#"></a>
+                    <a :href="obx.href">{{obx.txt}}</a>
 
                   </li>
               </ul>
@@ -131,6 +132,7 @@ export default {
 <style lang="scss" scoped>
 @import "../assets/styles/_global.scss";
 @import "../assets/styles/_mixin.scss";
+@import "../assets/styles/_footer.scss";
 
 
 </style>
