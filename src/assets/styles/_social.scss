@@ -1,0 +1,18 @@
+.container,
+.socials{@include flexCen(); img{margin: 0 10px;}}
+.socialsBar{
+    padding: 50px;
+    background-color: #303030;
+    justify-content: space-between;
+}
+.container{
+    width: 70%;
+    margin: auto;
+    justify-content: space-between;
+}
+span{
+    font-weight: 800;
+    text-transform: uppercase;
+    color: $logoColor;
+    font-size: 20px;
+}
