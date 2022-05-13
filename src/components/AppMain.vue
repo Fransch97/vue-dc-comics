@@ -13,10 +13,13 @@ export default {
 }
 </script>
 
-<style lang="scss" scope>
+<style lang="scss" >
+    
+@import "../assets/styles/global";
+
 main{
     background: black;
-    padding: 50px;
+    padding: 50px 0;
 }
 .container-main{
     margin: auto;
