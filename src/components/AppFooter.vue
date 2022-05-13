@@ -2,7 +2,16 @@
   <footer>
       <div class="footer-links">
           <div class="links-container-footer">
+              <ul v-for="(obj, index) in footerLinks" :key="`footer-${index}`">
+                  <li><a href="" class="title-ul"></a></li>
+                  <li 
+                  v-for="(obj, indexx) in obj.links" 
+                  :key="`footer-${indexx}`">
 
+                    <a href="#"></a>
+
+                  </li>
+              </ul>
           </div>
       </div>
   </footer>
@@ -16,46 +25,100 @@ export default {
                 {
                     title: "dc comics",
                     links:[
-                        "Characters",
-                        "Comics",
-                        "Movies",
-                        "TV",
-                        "Games",
-                        "Videos",
-                        "News"
+                        {
+                            txt:"Characters",
+                            href:"#"
+                        },
+                        {
+                            txt : "Comics",
+                            href :"#"
+                        },
+                        {
+                            txt : "Movies",
+                            href :"#"
+                        },
+                        {
+                            txt : "TV",
+                            href :"#"
+                        },
+                        {
+                            txt : "Games",
+                            href :"#"
+                        },
+                        {
+                            txt : "Videos",
+                            href :"#"
+                        },
+                        {
+                            txt : "News",
+                            href :"#"
+                        }
                     ]
                 },
                 {
                     title: "shop",
                     links:[
-                        "Shop DC",
-                        "Shop DC Collectibles",
+                        {txt:"Shop DC",href:"#"},
+                       { txt: "Shop DC Collectibles",href:"#"}
                     ]
                 },
                 {
                     title: "dc",
                     links:[
-                        "Terms Of Use",
-                        "Privacy policy",
-                        "Ad Choices",
-                        "Advertising",
-                        "Jobs",
-                        "Subscritpions",
-                        "Talent Workshops",
-                        "CPSC Certificates",
-                        "Ratings",
-                        "Shop Help",
-                        "Contact Us"
+                        {
+                            txt:"Terms Of Use",
+                            href: "#"
+                            },
+                        {
+                            txt:"Privacy policy",
+                            href: "#"
+                            },
+                        {
+                            txt:"Ad Choices",
+                            href: "#"
+                            },
+                        {
+                            txt:"Advertising",
+                            href: "#"
+                            },
+                        {
+                            txt:"Jobs",
+                            href: "#"
+                            },
+                        {
+                            txt:"Subscritpions",
+                            href: "#"
+                            },
+                        {
+                            txt:"Talent Workshops",
+                            href: "#"
+                            },
+                        {
+                            txt:"CPSC Certificates",
+                            href: "#"
+                            },
+                        {
+                            txt:"Ratings",
+                            href: "#"
+                            },
+                        {
+                            txt:"Shop Help",
+                            href: "#"
+                            },
+                        {
+                            txt:"Contact Us",
+                            href: "#"
+                            },
                     ]
                 },
                 {
                     title: "sites",
                     links:[
-                        "Dc",
-                        "MAD Magazine",
-                        "DC Kids",
-                        "DC universe",
-                        "DC Power Visa"
+                        {txt:"Dc",href:"#"},
+                        {txt:"MAD Magazine",href:"#"},
+                        {txt:"DC Kids",href:"#"},
+                        {txt:"DC universe",href:"#"},
+                        {txt:"DC Power Visa",href:"#"}
                     ]
                 }
             ]
