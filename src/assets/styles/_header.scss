@@ -22,6 +22,12 @@ nav{
             &.active a{
                 color:$logoColor;
             }
+            &:hover a{
+                color:$logoColor;
+            }
+            &:hover{
+                border-bottom: 5px solid #0c7cec; 
+            }
             a{
                 text-decoration: none;
                 text-transform: uppercase;
