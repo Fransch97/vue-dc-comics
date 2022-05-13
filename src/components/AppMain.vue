@@ -16,6 +16,7 @@ export default {
 <style lang="scss" >
     
 @import "../assets/styles/global";
+@import "../assets/styles/_var.scss";
 
 main{
     background: black;
@@ -23,7 +24,7 @@ main{
 }
 .container-main{
     margin: auto;
-    width: 70%;
+    width: $conWidth;
     color: white;
 }
 </style>

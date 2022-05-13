@@ -2,7 +2,7 @@
 nav{
     @include flexCen();
     align-items: stretch;
-    width: 70%;
+    width: $conWidth;
     margin: auto;
     justify-content: space-between;
 //logo

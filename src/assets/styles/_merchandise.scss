@@ -2,7 +2,7 @@
     background-color: $logoColor;
     padding: 50px;
     ul{
-        width: 70%;
+        width: $conWidth;
         margin: auto;
         @include flexCen();
         justify-content: space-around;

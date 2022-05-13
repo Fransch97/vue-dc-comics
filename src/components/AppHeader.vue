@@ -80,6 +80,7 @@ export default {
 <style lang="scss" >
 @import "../assets/styles/_mixin.scss";
 @import "../assets/styles/_global.scss";
+@import "../assets/styles/_var.scss";
 @import "../assets/styles/_header.scss";
 
 </style>

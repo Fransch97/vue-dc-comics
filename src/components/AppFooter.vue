@@ -134,6 +134,7 @@ export default {
 @import "../assets/styles/_global.scss";
 @import "../assets/styles/_mixin.scss";
 @import "../assets/styles/_footer.scss";
+@import "../assets/styles/_var.scss";
 
 
 </style>
