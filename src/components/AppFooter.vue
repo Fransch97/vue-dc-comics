@@ -14,6 +14,7 @@
                   </li>
               </ul>
           </div>
+          <img id="biglogo" src="../assets/img/dc-logo-bg.png" alt="">
       </div>
   </footer>
 </template>

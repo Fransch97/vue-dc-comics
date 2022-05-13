@@ -2,7 +2,7 @@
   <div class="merchandise">
       <ul>
         <li v-for="(link, index) in merchLinks" :key="`merch-${index}`">
-            <img  src="../assets/img/buy-comics-digital-comics.png" alt="">
+            <img  :src=" '../assets/img/' + link.srcImg" alt="">
             <a :href="link.href">{{link.text}}</a>
         </li>
       </ul>

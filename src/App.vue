@@ -4,6 +4,7 @@
     <AppMain/>
     <AppMercandise/>
     <AppFooter/>
+    <AppSocial/>
   </div>
 </template>
 
@@ -12,10 +13,11 @@ import AppHeader from "./components/AppHeader.vue";
 import AppMain from "./components/AppMain.vue";
 import AppMercandise from "./components/AppMercandise.vue";
 import AppFooter from "./components/AppFooter.vue";
+import AppSocial from "./components/AppSocial.vue";
 
 
 export default {
-    components: { AppHeader, AppMain, AppMercandise, AppFooter }
+    components: { AppHeader, AppMain, AppMercandise, AppFooter, AppSocial }
 }
 </script>
 
