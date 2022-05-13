@@ -79,39 +79,7 @@ export default {
 
 <style lang="scss" >
 @import "../assets/styles/_mixin.scss";
-
-nav{
-    @include flexCen();
-    align-items: stretch;
-    width: 70%;
-    margin: auto;
-    justify-content: space-between;
-//logo
-    .logo{
-        padding: 20px 0;
-    }
-    //links
-    ul{ 
-        @include flexCen();
-        align-items: stretch;
-        //li
-        li{
-            @include flexCen();
-            margin: 0 10px;
-            border-bottom: 5px solid white;
-            &.active{border-bottom: 5px solid #0c7cec; }
-            &.active a{
-                color:#0c7cec
-            }
-            a{
-                text-decoration: none;
-                text-transform: uppercase;
-                font-weight: bold;
-                color: #494949;
-                font-size: 14px;
-            }
-        }
-    }
-}
+@import "../assets/styles/_global.scss";
+@import "../assets/styles/_header.scss";
 
 </style>
