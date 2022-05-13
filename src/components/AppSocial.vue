@@ -6,19 +6,27 @@
       </div>
       <div class="socials">
         <span>follow us</span>
-        <img src="../assets/img/footer-facebook.png" alt="">
-        <img src="../assets/img/footer-periscope.png" alt="">
-        <img src="../assets/img/footer-pinterest.png" alt="">
-        <img src="../assets/img/footer-twitter.png" alt="">
-        <img src="../assets/img/footer-youtube.png" alt="">
+        <img v-for="(img,index) in images" :src="img" alt="" :key="`img-${index}`">
+        
       </div>
      </div>
   </div>
 </template>
 
 <script>
-export default {
+    import imgone from "../assets/img/footer-facebook.png"
+    import imgtwo from "../assets/img/footer-periscope.png"
+    import imgthree from "../assets/img/footer-pinterest.png"
+    import imgfour from "../assets/img/footer-twitter.png"
+    import imgfive from "../assets/img/footer-youtube.png"
+    
 
+export default {
+  data(){
+    return{
+      images:[imgone,imgtwo,imgthree,imgfour,imgfive]
+    }
+  }
 }
 </script>
 
