@@ -2,17 +2,19 @@
   <footer>
       <div class="footer-links">
           <div class="links-container-footer">
-              <ul v-for="(obj, index) in footerLinks" :key="`footer-${index}`">
-                  <li><a href="" class="title-li">{{obj.title}}</a></li>
-                  <li 
-                  class="small-li"
-                  v-for="(obx, indexx) in obj.links" 
-                  :key="`footer-${indexx}`">
-
-                    <a :href="obx.href">{{obx.txt}}</a>
-
-                  </li>
-              </ul>
+              <div class="mini-container">
+                  <ul v-for="(obj, index) in footerLinks" :key="`footer-${index}`">
+                      <li><a href="" class="title-li">{{obj.title}}</a></li>
+                      <li 
+                      class="small-li"
+                      v-for="(obx, indexx) in obj.links" 
+                      :key="`footer-${indexx}`">
+    
+                        <a :href="obx.href">{{obx.txt}}</a>
+    
+                      </li>
+                  </ul>
+              </div>
           </div>
           <img id="biglogo" src="../assets/img/dc-logo-bg.png" alt="">
       </div>

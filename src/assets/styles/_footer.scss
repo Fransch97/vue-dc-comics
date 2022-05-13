@@ -18,24 +18,33 @@ footer{
             display: flex;
             width:$conWidth;
             margin: auto;
-            ul{
-                padding: 20px 20px 20px 0;
-        
-                .title-li{
-                    display: inline-block;
-                    font-weight: bold;
-                    text-transform: uppercase;
-                    color: white;
-                    font-size: 18px;
-        
-                }
-                .small-li{
-                    font-size: 12px;
-                    a{
+            height: 100%;
+            .mini-container{
+                display: flex;
+                flex-direction: column;
+                flex-wrap: wrap;
+                height: 100%;
+                width: 40%;
+                ul{
+                    padding: 20px 20px 20px 0;
+                    align-self: flex-start;
+            
+                    .title-li{
                         display: inline-block;
-                        color: #989694;
                         font-weight: bold;
-                        padding: 3px 0;
+                        text-transform: uppercase;
+                        color: white;
+                        font-size: 18px;
+            
+                    }
+                    .small-li{
+                        font-size: 12px;
+                        a{
+                            display: inline-block;
+                            color: #989694;
+                            font-weight: bold;
+                            padding: 3px 0;
+                        }
                     }
                 }
             }
