@@ -3,6 +3,7 @@
     <AppHeader/>
     <AppMain/>
     <AppMercandise/>
+    <AppFooter/>
   </div>
 </template>
 
@@ -10,10 +11,11 @@
 import AppHeader from "./components/AppHeader.vue";
 import AppMain from "./components/AppMain.vue";
 import AppMercandise from "./components/AppMercandise.vue";
+import AppFooter from "./components/AppFooter.vue";
 
 
 export default {
-    components: { AppHeader, AppMain, AppMercandise }
+    components: { AppHeader, AppMain, AppMercandise, AppFooter }
 }
 </script>
 
