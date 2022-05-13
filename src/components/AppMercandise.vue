@@ -2,7 +2,7 @@
   <div class="merchandise">
       <ul>
         <li v-for="(link, index) in merchLinks" :key="`merch-${index}`">
-            <img  :src=" '../assets/img/' + link.srcImg" alt="">
+            <img  :src="link.srcImg" alt="">
             <a :href="link.href">{{link.text}}</a>
         </li>
       </ul>
@@ -10,6 +10,11 @@
 </template>
 
 <script>
+    import one from "../assets/img/buy-comics-digital-comics.png"
+    import two from "../assets/img/buy-comics-subscriptions.png"
+    import tree from "../assets/img/buy-comics-merchandise.png"
+    import four from "../assets/img/buy-comics-shop-locator.png"
+    import five from "../assets/img/buy-dc-power-visa.svg"
 export default {
     data(){
         return{
@@ -17,31 +22,31 @@ export default {
                 {
                     text: "digital comics",
                     href: "#",
-                    srcImg : "buy-comics-digital-comics.png"
+                    srcImg : one
 
                 },
                 {
                     text: "dc merchandise",
                     href: "#",
-                    srcImg : "buy-comics-merchandise.png"
+                    srcImg :four
 
                 },
                 {
                     text: "subscription",
                     href: "#",
-                    srcImg : "buy-comics-subscriptions.png"
+                    srcImg : two
 
                 },
                 {
                     text: "comic shop locator",
                     href: "#",
-                    srcImg : "buy-comics-shop-locator.png"
+                    srcImg :tree 
 
                 },
                 {
                     text: "dc power visa",
                     href: "#",
-                    srcImg : "buy-dc-power-visa.svg"
+                    srcImg :five 
 
                 }
             ]
