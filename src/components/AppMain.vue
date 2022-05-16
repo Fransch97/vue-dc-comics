@@ -26,7 +26,7 @@ export default {
 @import "../assets/styles/_var.scss";
 
 main{
-    background: black;
+    background: #1c1c1c;
     padding-bottom: 20px ;
     text-align: center;
 
