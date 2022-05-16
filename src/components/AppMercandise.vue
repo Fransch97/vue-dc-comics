@@ -28,7 +28,7 @@ export default {
                 {
                     text: "dc merchandise",
                     href: "#",
-                    srcImg :four
+                    srcImg :tree
 
                 },
                 {
@@ -40,7 +40,7 @@ export default {
                 {
                     text: "comic shop locator",
                     href: "#",
-                    srcImg :tree 
+                    srcImg :four 
 
                 },
                 {
