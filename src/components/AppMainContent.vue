@@ -1,18 +1,26 @@
 <template>
   <div class="content">
-      <div class="comic-card">
-        <div class="img">
-            <img :src="docs.thumb" alt="">
-        </div>
-        <span class="txt">{{docs.series}}</span>
-      </div>
+      <AppContentCard 
+      
+       v-for="(el, index) in jsondocs"
+            :key="`comics-${index}`"
+            :docs="el"
+      />
   </div>
 </template>
 
 <script>
+import json from '../assets/data/dc-comics.json';
+import AppContentCard from './AppContentCard.vue';
 export default {
-    props:{
-        docs : Object
+    props: {
+        docs: Object
+    },
+    components: { AppContentCard },
+    data(){
+        return{
+            jsondocs : json
+        }
     }
 }
 </script>
