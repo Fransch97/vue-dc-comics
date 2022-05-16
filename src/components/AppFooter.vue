@@ -62,8 +62,8 @@ export default {
                 {
                     title: "shop",
                     links:[
-                        {txt:"Shop DC",href:"#"},
-                       { txt: "Shop DC Collectibles",href:"#"}
+                        {txt:"Shop DC", href:"#"},
+                       { txt: "Shop DC Collectibles", href:"#"}
                     ]
                 },
                 {
@@ -116,9 +116,9 @@ export default {
                     ]
                 },
                 {
-                    title: "sites",
+                    title : "sites",
                     links:[
-                        {txt:"Dc",href:"#"},
+                        {txt:"DC",href:"#"},
                         {txt:"MAD Magazine",href:"#"},
                         {txt:"DC Kids",href:"#"},
                         {txt:"DC universe",href:"#"},
