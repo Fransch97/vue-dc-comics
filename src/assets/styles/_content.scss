@@ -10,7 +10,7 @@ div.content{
     justify-content: space-between;
     .comic-card{
         display: inline-block;
-        width: calc((100% / 6) - 20px);
+        width: calc((100% / 6));
         padding: 0 20px;
         text-align: start;
     .img{
