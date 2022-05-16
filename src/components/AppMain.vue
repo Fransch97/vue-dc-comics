@@ -1,15 +1,28 @@
 <template>
   <main>
-      <div class="container-main">
-          <h1>--->Content goes here &lt; (&)/%(&%(/&----</h1>
-      </div>
-
+        <AppJambo />
+        <AppMainContent
+        
+        />
   </main>
 </template>
 
 <script>
+import AppJambo from './AppJambo.vue';
+import AppMainContent from './AppMainContent.vue';
+import json from '../assets/data/dc-comics.json';
 export default {
-
+    components: { AppJambo, AppMainContent },
+    data(){
+        return{
+            jsondocs : json
+        }
+    },
+    mounted(){
+        console.log(this.jsondocs)
+        // v-for="(el, index) in jsondocs"
+        // :key="`comics-${index}`"
+    }
 }
 </script>
 
@@ -20,7 +33,6 @@ export default {
 
 main{
     background: black;
-    padding: 50px 0;
 }
 .container-main{
     margin: auto;
