@@ -4,8 +4,13 @@ div.content{
     margin: auto;
     position: relative;
     padding: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
     .comic-card{
-        .img{
+        background-color: yellow;
+        display: inline-block;
+    .img{
             overflow: hidden;
             width: 200px;
             height: 200px;

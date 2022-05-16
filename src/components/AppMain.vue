@@ -2,6 +2,9 @@
   <main>
         <AppJambo />
         <AppMainContent
+            v-for="(el, index) in jsondocs"
+            :key="`comics-${index}`"
+            :docs="el"
         
         />
   </main>
@@ -19,9 +22,9 @@ export default {
         }
     },
     mounted(){
-        console.log(this.jsondocs)
-        // v-for="(el, index) in jsondocs"
-        // :key="`comics-${index}`"
+        console.log(this.jsondocs[0].series)
+        
+     
     }
 }
 </script>
